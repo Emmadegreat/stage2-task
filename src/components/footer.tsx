@@ -1,7 +1,7 @@
 import Link from 'next/link'
 import React from 'react'
 
-const Footer = () => {
+const Footer = ({date}) => {
     return (
         <footer className='p-4 bg-[#151515] text-[#fff] px-8 text-center w-full'>
             <div className='mt-8 mb-4 flex flex-col items-center text-center'>
@@ -48,6 +48,8 @@ const Footer = () => {
                     </button>
 
                 </div>
+
+                <p className='mt-8 sm:text-sm text-[0.7rem]'> &copy; { date} — Timbu Online Store – All Rights Reserved</p>
 
             </div>
         </footer>
