@@ -25,7 +25,7 @@ const ProductCard: React.FC<productsProps> = ({imgUrl, name, price}) => {
                     <div className='flex flex-col items-center mt-[-0.7rem] px-2'>
                         <p className='text-[16px] tex-center'>{name}</p>
                         <p>₦{price}</p>
-                        <button className='bg-[#EBADAD] rounded px-6 mb-4 mt-1 items-center py-2 flex gap-4'>
+                        <button className='bg-[#EBADAD] rounded px-6 mb-4 mt-1 items-center py-2 flex gap-4 hover:bg-[#AF0101]'>
                             <svg
                                 className='text-[#4E2020]'
                                 width="20" height="20" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
