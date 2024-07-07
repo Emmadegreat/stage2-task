@@ -6,7 +6,7 @@ const Footer = () => {
 
     const date = new Date().getFullYear();
     return (
-        <footer className='p-4 bg-[#151515] text-[#fff] px-8 text-center w-full'>
+        <footer className='p-4 bg-[#151515] text-[#fff] px-6 sm:px-8 text-center w-full'>
             <div className='mt-8 mb-4 flex flex-col items-center text-center'>
                 <h3 className='text-[#fff] font-[600] text-[20px]'>Contact Us</h3>
                 <div className='flex gap-4 mt-3 mb-[1.5rem]'>
@@ -32,6 +32,7 @@ const Footer = () => {
                         </svg>
                     </Link>
                 </div>
+                <p className='relative sm:left-[27px] text-[0.6rem] sm:text-[0.9rem] text-center mb-2'>Contact us for any details or kindly enter your details below</p>
 
                 <div className='flex items-center relative m-auto'>
 
@@ -39,12 +40,12 @@ const Footer = () => {
                         type="email"
                         name="email"
                         placeholder="Enter your email or phone number"
-                        className='sm:w-[310px] w-[200px] h-[44px] bg-[#D9D9D9] text-[#8E5858] text-sm px-3 py-1 mb-5 border-none focus:outline-none f
-                        ocus:border-transparent focus:ring-0 search-input placeholder-[#8E5858] placeholder-[2px]'
+                        className='sm:w-[350px] w-[230px] h-[44px] bg-[#D9D9D9] text-[#8E5858] text-sm px-3 py-1 mb-5 border-none focus:outline-none
+                        focus:border-[#000] focus:ring-0 search-input placeholder-[#8E5858] placeholder-[2px]'
                     />
                     <button
                         type="submit"
-                        className='absolute bg-[#af0101] sm:px-6 px-3 bottom-[20px] sm:right-[-55px] right-[-20px] h-[44px] p-2 text-[#fff] w-[]
+                        className='absolute bg-[#af0101] sm:px-6 px-3 bottom-[20px] sm:right-[-45px] right-[-20px] h-[44px] p-1 text-[#fff] w-[]
                          focus:outline-none focus:border-transparent focus:ring-0 submit-btn'
                     >
                         Send
@@ -52,7 +53,7 @@ const Footer = () => {
 
                 </div>
 
-                <p className='mt-6 sm:text-sm text-[0.7rem]'> &copy; { date} — Timbu Online Store – All Rights Reserved</p>
+                <p className='mt-5 sm:text-sm text-[0.7rem]'> &copy; { date} — Timbu Online Store – All Rights Reserved</p>
 
             </div>
         </footer>
