@@ -6,7 +6,7 @@ const Footer = () => {
         <footer className='p-4 bg-[#151515] text-[#fff] px-8 text-center w-full'>
             <div className='mt-8 mb-4 flex flex-col items-center text-center'>
                 <h3 className='text-[#fff] font-[600] text-[20px]'>Contact Us</h3>
-                <div className='flex gap-4 my-3'>
+                <div className='flex gap-4 mt-3 mb-[3rem]'>
                     <Link href="#">
                         <svg width="18" height="18" viewBox="0 0 11 20" fill="none" xmlns="http://www.w3.org/2000/svg">
                             <path d="M7 11.5H9.5L10.5 7.5H7V5.5C7 4.47 7 3.5 9 3.5H10.5V0.14C10.174 0.0970001 8.943 0 7.643 0C4.928 0 3 1.657 3 4.7V7.5H0V11.5H3V20H7V11.5Z" fill="white"/>
@@ -28,6 +28,25 @@ const Footer = () => {
                             <path d="M16.508 5.5H16.498M15.5 11C15.5 12.1935 15.0259 13.3381 14.182 14.182C13.3381 15.0259 12.1935 15.5 11 15.5C9.80653 15.5 8.66193 15.0259 7.81802 14.182C6.97411 13.3381 6.5 12.1935 6.5 11C6.5 9.80653 6.97411 8.66193 7.81802 7.81802C8.66193 6.97411 9.80653 6.5 11 6.5C12.1935 6.5 13.3381 6.97411 14.182 7.81802C15.0259 8.66193 15.5 9.80653 15.5 11Z" stroke="white" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/>
                         </svg>
                     </Link>
+                </div>
+
+                <div className='flex items-center relative m-auto'>
+
+                    <input
+                        type="email"
+                        name="email"
+                        placeholder="Enter your email or phone number"
+                        className='sm:w-[310px] w-[200px] h-[44px] bg-[#D9D9D9] text-[#8E5858] text-sm px-3 py-1 mb-5 border-none focus:outline-none f
+                        ocus:border-transparent focus:ring-0 search-input placeholder-[#8E5858] placeholder-[2px]'
+                    />
+                    <button
+                        type="submit"
+                        className='absolute bg-[#af0101] sm:px-6 px-3 bottom-[20px] sm:right-[-55px] right-[-20px] h-[44px] p-2 text-[#fff] w-[]
+                         focus:outline-none focus:border-transparent focus:ring-0 submit-btn'
+                    >
+                        Send
+                    </button>
+
                 </div>
 
             </div>

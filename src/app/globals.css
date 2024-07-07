@@ -3,5 +3,15 @@
 @tailwind components;
 @tailwind utilities;
 
+.search-input{
+  border: 1px solid #fff;
+  border-top-left-radius: 5px;
+  border-bottom-left-radius: 5px
+}
 
+.submit-btn{
+  border-width: 0rem;
+  border-top-right-radius: 5px;
+  border-bottom-right-radius: 5px
+}
 
