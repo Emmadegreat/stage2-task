@@ -1,7 +1,8 @@
+import React, { ChangeEvent, useState } from 'react'
+
+import Button from './button'
 import ProductCard from './productcard'
 import { ProductList } from '@/productlist'
-import React, { ChangeEvent, useState } from 'react'
-import Button from './button'
 
 interface productProps1{
     id: number;
@@ -10,7 +11,7 @@ interface productProps1{
     price: string;
 }
 const Products = () => {
-    const [products, setProducts] = useState<productProps1[]>([]);
+
     const [search, setSearch] = useState("");
 
     const findProducts = ProductList.filter(product => {

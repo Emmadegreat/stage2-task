@@ -1,10 +1,10 @@
 import { AiFillHome } from 'react-icons/ai'
 import { AiOutlineArrowRight } from 'react-icons/ai'
 import { BsFillInfoCircleFill } from 'react-icons/bs'
+import Button from '@/components/button'
 import Image from 'next/image'
 import Link from 'next/link'
 import Menu from './menu'
-import Button from '@/components/button'
 import React from 'react'
 
 const Header:React.FC = () => {
@@ -25,7 +25,7 @@ const Header:React.FC = () => {
                 <Menu title="Shop" address="/shop" className="mx-4" />
                 <Menu title="About Us" address="/about" className="mx-4" />
                 <Menu title="Contact" address="contact" className="mr-4" />
-                <Menu title="Cart" address="/cart" className="" />
+                <Menu title="Checkout" address="/checkout" className="" />
             </div>
 
             <Button
