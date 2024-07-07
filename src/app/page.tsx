@@ -8,7 +8,7 @@ const page = () => {
   return (
     <main className="flex flex-col pt-12">
       <Hero />
-      <Popularproducts/>
+      {/*<Popularproducts/>*/}
       <Products/>
     </main>
   )

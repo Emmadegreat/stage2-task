@@ -25,7 +25,7 @@ export default function RootLayout({
       <body className={inter.className}>
         <Header />
         {children}
-        <Footer date={new Date().getFullYear() } />
+        <Footer />
       </body>
     </html>
   );

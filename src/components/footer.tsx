@@ -1,7 +1,10 @@
 import Link from 'next/link'
 import React from 'react'
 
-const Footer = ({date}) => {
+
+const Footer = () => {
+
+    const date = new Date().getFullYear();
     return (
         <footer className='p-4 bg-[#151515] text-[#fff] px-8 text-center w-full'>
             <div className='mt-8 mb-4 flex flex-col items-center text-center'>
