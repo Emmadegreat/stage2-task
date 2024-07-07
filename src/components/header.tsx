@@ -9,7 +9,7 @@ import React from 'react'
 
 const Header:React.FC = () => {
     return (
-        <header className='fixed flex items-center justify-between px-8  bg-[#af0101] text-white w-full h-[70px] z-[1000]'>
+        <header className='fixed flex items-center justify-between px-8  bg-[#AF0101] text-white w-full h-[70px] z-[1000]'>
             <Link href="/">
                 <Image
                     alt='alt'
@@ -21,11 +21,11 @@ const Header:React.FC = () => {
             </Link>
             <div className='flex justify-between'>
 
-                <Menu title="Home" address="/home" className="" />
+                <Menu title="Home" address="/" className="" />
                 <Menu title="Shop" address="/shop" className="mx-4" />
                 <Menu title="About Us" address="/about" className="mx-4" />
                 <Menu title="Contact" address="contact" className="mr-4" />
-                {/*<Menu title="Checkout" address="/checkout" className="" />*/}
+                <Menu title="Cart" address="/cart" className="" />
             </div>
 
             <Button
