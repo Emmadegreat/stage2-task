@@ -1,6 +1,6 @@
 import { AiFillHome } from 'react-icons/ai'
 import { AiOutlineArrowRight } from 'react-icons/ai'
-import { BsFillInfoCircleFill } from 'react-icons/bs'
+import { BsArrowRight } from "react-icons/bs";
 import Button from '@/components/button'
 import Image from 'next/image'
 import Link from 'next/link'
@@ -27,13 +27,10 @@ const Header:React.FC = () => {
                 <Menu title="Contact" address="contact" className="mr-4 hover:text-[#ffecd0] links" />
             </div>
             <button
-                className='rounded bg-[#ad5b5b] px-4 items-center py-2 flex gap-2 hover:bg-[#F5E5FF] hover:text-[#ad5b5b]'
+                className='hover:text-[#ad5b5b] rounded bg-[#ad5b5b] px-4 items-center py-2 flex gap-2 hover:bg-[#F5E5FF]'
             >
                 Get Started
-                <svg width="24" className="get-started" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
-                    <path d="M14.43 5.93005L20.5 12.0001L14.43 18.0701" stroke="white" strokeWidth="1.5" strokeMiterlimit="10" strokeLinecap="round" strokeLinejoin="round" />
-                    <path d="M3.5 12H20.33" stroke="white" strokeWidth="1.5" strokeMiterlimit="10" strokeLinecap="round" strokeLinejoin="round" />
-                </svg>
+                <BsArrowRight className='font-[500] text-[1.3rem]'/>
             </button>
 
         </header>

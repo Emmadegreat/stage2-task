@@ -1,4 +1,5 @@
 import { AiOutlineArrowRight } from 'react-icons/ai'
+import { BsArrowRight } from 'react-icons/bs'
 import Button from '@/components/button'
 import Image from 'next/image'
 import React from 'react'
@@ -17,13 +18,11 @@ const   Hero = () => {
                     Seamless Shopping for the discerning customer. Fast finds & instant gratification. Shop Happy!
                 </p>
                 <Button
-                    className='sm:flex hidden bg-[#EBADAD] text-[#4E2020] rounded font-[500] px-6 mt-7 items-center py-2 gap-2'
+                    className='sm:flex hidden bg-[#EBADAD] hover:bg-[#AF0101] hover:text-[#fff] text-[#4E2020] rounded font-[500] px-6 mt-7 items-center py-2 gap-2'
                     text='Shop Now'
                     icon={
-                        <svg className='text-[#4E2020]' width="25" height="24" viewBox="0 0 25 24" fill="none" xmlns="http://www.w3.org/2000/svg">
-                            <path d="M14.93 5.93005L21 12.0001L14.93 18.0701" stroke="#4E2020" strokeWidth="1.5" strokeMiterlimit="10" strokeLinecap="round" strokeLinejoin="round"/>
-                            <path d="M4 12H20.83" stroke="#4E2020" strokeWidth="1.5" strokeMiterlimit="10" strokeLinecap="round" strokeLinejoin="round"/>
-                        </svg>
+
+                        <BsArrowRight className='font-[500] text-[1.3rem]'/>
                     }
                 />
             </div>
