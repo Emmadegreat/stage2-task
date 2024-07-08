@@ -147,9 +147,10 @@ const Checkout = () => {
                                     <p className='sm:text-[0.8rem] text-[0.8rem] font-[500]'>Music System Speaker</p>
                                     <p className='sm:text-[0.8rem] text-[0.8rem] font-[400]'>Size: Big</p>
                                     <p className='sm:text-[0.8rem] text-[0.8rem] font-[400]'>Qty: 1</p>
+                                    <p className='block md:hidden sm:text-[0.8rem] text-[0.8rem] font-[400]'>₦80,000</p>
                                 </div>
                             </div>
-                            <p className='text-sm mt-[-3rem]'>₦80,000</p>
+                            <p className='hidden md:block text-sm mt-[-3rem]'>₦80,000</p>
                         </div>
 
                         <div className='flex items-center relative top-[10px] md:top-[30px] mx-6 md:mx-0'>

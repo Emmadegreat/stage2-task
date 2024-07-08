@@ -1,7 +1,10 @@
-import React,{FC} from 'react'
-import Image from 'next/image'
-//import { ProductList } from '@/productlist'
+import React,{FC, useState} from 'react'
+
 import Button from './button'
+import Image from 'next/image'
+
+//import { ProductList } from '@/productlist'
+
 
 interface productsProps{
     imgUrl: string,
@@ -9,7 +12,11 @@ interface productsProps{
     price:string,
 }
 
-const ProductCard: React.FC<productsProps> = ({imgUrl, name, price}) => {
+const ProductCard: React.FC<productsProps> = ({ imgUrl, name, price }) => {
+    const [showModal, setShowModal] = useState(false);
+    const ToggleModal = (e) => {
+        e.preventDefault(setShowModal(!showModal));
+    }
     return (
         <div className='px-2 py-4'>
 
