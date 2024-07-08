@@ -52,7 +52,7 @@ const Cart = () => {
 
             </section>
 
-            <hr className='sm:mx-[3rem] mx-8 border-[0.05rem] border-[#F5E5FF]' />
+            <hr className='sm:mx-[3rem] mx-6 border-[0.05rem] border-[#F5E5FF]' />
             <Link href="/" className='sm:px-[4rem] px-8 block md:hidden text-start mt-2 mb-[4rem] basis-[30%]'>Continue Shopping</Link>
 
             <section className="sm:px-[4rem] px-8 flex md:flex-row flex-col justify-between items-center md:py-4 py-[3rem] mb-[8rem]">
