@@ -25,7 +25,6 @@ const Header:React.FC = () => {
                 <Menu title="Shop" address="/shop" className="mx-4 hover:text-[#ffecd0]" />
                 <Menu title="About Us" address="/about" className="mx-4 hover:text-[#ffecd0]" />
                 <Menu title="Contact" address="contact" className="mr-4 hover:text-[#ffecd0]" />
-                <Menu title="Checkout" address="/checkout" className="hover:text-[#ffecd0]" />
             </div>
 
             <Button
