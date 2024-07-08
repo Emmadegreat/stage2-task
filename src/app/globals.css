@@ -78,6 +78,11 @@
 
   }
   .modal-card2{
-    margin-left: 2rem;
+    margin-left: 0rem;
+  }
+  .cartmodal {
+    max-width: 360px;
+    padding: 3rem 0rem;
+    margin: auto;
   }
 }
