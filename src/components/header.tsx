@@ -21,17 +21,17 @@ const Header:React.FC = () => {
             </Link>
             <div className='flex justify-between'>
 
-                <Menu title="Home" address="/" className="" />
-                <Menu title="Shop" address="/shop" className="mx-4" />
-                <Menu title="About Us" address="/about" className="mx-4" />
-                <Menu title="Contact" address="contact" className="mr-4" />
-                <Menu title="Checkout" address="/checkout" className="" />
+                <Menu title="Home" address="/" className="hover:text-[#ffecd0]" />
+                <Menu title="Shop" address="/shop" className="mx-4 hover:text-[#ffecd0]" />
+                <Menu title="About Us" address="/about" className="mx-4 hover:text-[#ffecd0]" />
+                <Menu title="Contact" address="contact" className="mr-4 hover:text-[#ffecd0]" />
+                <Menu title="Checkout" address="/checkout" className="hover:text-[#ffecd0]" />
             </div>
 
             <Button
-                className='rounded bg-[#ad5b5b] px-4 items-center py-2 flex gap-2'
+                className='rounded bg-[#ad5b5b] px-4 items-center py-2 flex gap-2 hover:bg-[#F5E5FF] hover:text-[#ad5b5b]'
                 text='Get Started'
-                icon={<svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+                icon={<svg width="24" className="hover:text-[#d9d9d9]" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
                     <path d="M14.43 5.93005L20.5 12.0001L14.43 18.0701" stroke="white" strokeWidth="1.5" strokeMiterlimit="10" strokeLinecap="round" strokeLinejoin="round" />
                     <path d="M3.5 12H20.33" stroke="white" strokeWidth="1.5" strokeMiterlimit="10" strokeLinecap="round" strokeLinejoin="round" />
                 </svg>}

@@ -20,7 +20,7 @@ export default function RootLayout({
   return (
     <html lang="en">
       <head>
-        <link rel="icon" href="https://res.cloudinary.com/dbnxbly1r/image/upload/v1720269412/timbu-shop/Group_1171275219_d4mkt4.svg" />
+        <link rel="icon" href="https://res.cloudinary.com/dbnxbly1r/image/upload/v1720404219/timbu-shop/logo_appxjg.jpg" />
       </head>
       <body className={inter.className}>
         <Header />
