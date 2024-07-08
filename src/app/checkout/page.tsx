@@ -50,25 +50,23 @@ const Checkout = () => {
                         />
 
                         <div className='flex justify-between items-center'>
-                            <select name='state'
+                            <input
+                                type="text"
+                                name='state'
+                                placeholder='State'
                                 className='w-full h-[42px] text-[1rem] px-3 py-1 mb-5 rounded border-[1px] border-[#B2A9A9]
                                 focus:outline-0 focus:border-[1px] focus:border-[#B2A9A9] placeholder-[#000] mr-4'
-                            >
-                                <option value="">State</option>
-                                <option value="Lagos">Lagos</option>
-                                <option value="Enugu">Enugu</option>
-                                <option value="Rivers">Rivers</option>
-                            </select>
+                            />
 
-                            <select name='zipcode'
+
+                            <input
+                                type='text'
+                                name='zipcode'
+                                placeholder='Zipe Code'
                                 className='w-full h-[42px] placeholder-[#000] text-[1rem] px-3 py-1 mb-5 rounded border-[1px] border-[#B2A9A9]
                                 focus:outline-0 focus:border-[1px] focus:border-[#B2A9A9] ml-4'
-                            >
-                                <option value="">Zip Code</option>
-                                <option value="Lagos">00112233</option>
-                                <option value="Enugu">00112232</option>
-                                <option value="Rivers">00112231</option>
-                            </select>
+                            />
+
                         </div>
 
                     </div>
@@ -76,43 +74,41 @@ const Checkout = () => {
                     <section className=''>
                         <p className='text-[#4E2020] mt-3 mb-7 font-[500] text-[1.1rem]'>Delivery Schedule</p>
                         <input
-                            type="text"
+                            type="date"
                             name='date'
 
                             placeholder='Date...'
 
                             className='w-full h-[42px] placeholder-[#000] text-[1rem] px-3 py-1 mb-5 rounded border-[1px] border-[#B2A9A9] focus:outline-0 focus:border-[1px] focus:border-[#B2A9A9]'
                         />
-                        <select name='delivery-period'
+                        <input
+                            type='text'
+                            name='delivery-period'
+                            placeholder='Delivery period'
                             className='w-full h-[42px] placeholder-[#000] text-[1rem] px-3 py-1 mb-5 rounded border-[1px] border-[#B2A9A9]
                                 focus:outline-0 focus:border-[1px] focus:border-[#B2A9A9]'
-                            >
-                            <option value="">Select a Delivery Period</option>
-                            <option value="1">1</option>
-                            <option value="2">2</option>
-                            <option value="3">3</option>
-                        </select>
+                        />
+
 
                         <div className='flex justify-between items-center'>
-                                <select name='state'
-                                    className='w-full h-[42px] text-[1rem] px-3 py-1 mb-5 rounded border-[1px] border-[#B2A9A9]
+                            <input
+                                type='text'
+                                name='state'
+                                placeholder='Time'
+                                className='w-full h-[42px] text-[1rem] px-3 py-1 mb-5 rounded border-[1px] border-[#B2A9A9]
                                     focus:outline-0 focus:border-[1px] focus:border-[#B2A9A9] placeholder-[#000] mr-4'
-                                >
-                                    <option value="">Time</option>
-                                    <option value="time1">time1</option>
-                                    <option value="time2">time2</option>
-                                    <option value="time3">time3</option>
-                                </select>
 
-                                <select name='zipcode'
-                                    className='w-full h-[42px] placeholder-[#000] text-[1rem] px-3 py-1 mb-5 rounded border-[1px] border-[#B2A9A9]
+                            />
+
+
+                            <input
+                                type='text'
+                                name='zipcode'
+                                placeholder='Time Range'
+                                className='w-full h-[42px] placeholder-[#000] text-[1rem] px-3 py-1 mb-5 rounded border-[1px] border-[#B2A9A9]
                                     focus:outline-0 focus:border-[1px] focus:border-[#B2A9A9] ml-4'
-                                >
-                                    <option value="">Time range</option>
-                                    <option value="01">1</option>
-                                    <option value="02">2</option>
-                                    <option value="03">3</option>
-                                </select>
+                            />
+
                         </div>
                         <input
                             type="text"

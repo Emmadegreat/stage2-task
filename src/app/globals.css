@@ -71,7 +71,7 @@
   }
 }
 
-@media screen and (max-width:640px) {
+@media screen and (max-width:641px) {
   .search-input::placeholder {
     color: #8E5858;
     font-size: 0.5rem;

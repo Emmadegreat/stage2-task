@@ -11,7 +11,7 @@ const   Hero = () => {
                 <h1 className='hidden sm:block font-[Poppins] text-[#4E2020] font-bold text-[46px] leading-[56px]'>
                     Effortless Elegance. <br />Instant Gratification.
                 </h1>
-                <h1 className='sm:hidden block font-[Poppins] text-[#4E2020] font-bold text-[34px] leading-[48px]'>
+                <h1 className='sm:hidden block text-center font-[Poppins] text-[#4E2020] font-bold m-auto text-[34px] leading-[50px]'>
                     Effortless Elegance. <br />Instant  <br/> Gratification.
                 </h1>
                 <p className="sm:block hidden text-[#AD5B5B] font-[400] text-[18px] leading-[25px] mt-6 font-[inter]">
