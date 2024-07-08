@@ -86,3 +86,33 @@
     margin: auto;
   }
 }
+
+.navbar .nav-menu{
+    display: flex;
+    flex-direction: column;
+    position: fixed;
+    align-items: flex-start;
+    background-color: red;
+    width: 50%;
+    height: 100vh;
+    top: 0;
+    /*left: -100%;*/
+    padding-top: 1.5rem;
+    padding-left: 1.5rem;
+
+
+    z-index: 1000;
+    transition: 0.7s all;
+    -webkit-transition: 0.7s all;
+    -moz-transition: 0.7s all;
+    -ms-transition: 0.7s all;
+    -o-transition: 0.7s all;
+}
+
+.nav-menu .toggler{
+    display: flex;
+    width: 100%;
+    justify-content: space-between;
+    align-items: center;
+
+  }
