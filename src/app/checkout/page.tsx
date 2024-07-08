@@ -247,7 +247,7 @@ const Checkout = () => {
                         </div>
                         <p className='my-2 text-sm'>Securely pay with your credit card</p>
                         <div className='relative'>
-                            <Link href="/checkout" className='top-[5px] right-[0px] bg-[#AF0101] absolute rounded p-2 text-sm text-[#fff]'>
+                            <Link href="/checkout" className='hover:bg-[#AD5B5B] top-[5px] right-[0px] bg-[#AF0101] absolute rounded p-2 text-sm text-[#fff]'>
                                 Confirm Order
                             </Link>
                         </div>

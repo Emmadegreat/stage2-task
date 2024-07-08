@@ -31,7 +31,7 @@ const Footer = () => {
                         </svg>
                     </Link>
                 </div>
-                <p className='relative sm:left-[27px] text-[0.6rem] sm:text-[0.8rem] text-center mb-2'>Contact us for any details or kindly enter your details below</p>
+                <p className='relative sm:left-[27px] text-[0.6rem] sm:text-[0.84rem] text-center mb-2'>Contact us for any details or kindly enter your details below</p>
 
                 <div className='flex items-center relative m-auto'>
 

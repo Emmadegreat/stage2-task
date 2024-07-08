@@ -1,3 +1,4 @@
+import { BsArrowRight } from 'react-icons/bs'
 import Button from '@/components/button'
 import React from 'react'
 
@@ -31,16 +32,10 @@ const Popularproducts = () => {
                 <p className="text-[#AD5B5B] font-[400] text-[18px] leading-[25px] mt-4 font-[inter]">
                     Seamless Shopping for the discerning <br/> customer. Fast finds & instant <br/> gratification. Shop Happy!
                 </p>
-                <Button
-                    className='flex bg-[#EBADAD] text-[#4E2020] w-[280px] text-center rounded font-[500] px-6 mt-5 items-center py-2 gap-2'
-                    text='Shop Now'
-                    icon={
-                        <svg className='text-[#4E2020]' width="25" height="24" viewBox="0 0 25 24" fill="none" xmlns="http://www.w3.org/2000/svg">
-                            <path d="M14.93 5.93005L21 12.0001L14.93 18.0701" stroke="#4E2020" strokeWidth="1.5" strokeMiterlimit="10" strokeLinecap="round" strokeLinejoin="round"/>
-                            <path d="M4 12H20.83" stroke="#4E2020" strokeWidth="1.5" strokeMiterlimit="10" strokeLinecap="round" strokeLinejoin="round"/>
-                        </svg>
-                    }
-                />
+                {/*<!--<button className='flex bg-[#EBADAD] text-center hover:bg-[#AF0101] hover:text-[#fff] text-[#4E2020] w-[280px] rounded font-[500] px-6 mt-5 items-center py-2 gap-2'>
+                    Shop Now
+                    <BsArrowRight className='font-[500] text-[1.3rem]' />
+                </button>-->*/}
             </div>
         </div >
     )
