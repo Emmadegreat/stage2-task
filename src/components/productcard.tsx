@@ -57,11 +57,11 @@ const ProductCard: React.FC<productsProps> = ({ imgUrl, name, price }) => {
                     onClick={ToggleModal}
                     className='fixed bg-opacity-40 inset-0 overflow-auto flex items-center w-full z-[2000] h-[100vh] bg-[#69444442] top-[70px] bottom-[60px] left-0 right-0'>
 
-                    <div className='z-[1500] flex justify-around items-center md:right-[25%] lg:w-[60%] pr-[5rem] p-6 relative bottom-[8%] left-[20%]
+                    <div className='z-[1500] flex justify-center items-center cartmodal
                         bg-[#fff] shadow-lg' >
 
                         <div className='flex flex-col bg-[#fff]'>
-                            <p className='text-[0.8rem]'>Item Secured! You&apos;re One Step Closer to Checkout</p>
+                            <p className='text-[0.7rem]'>Item Secured! You&apos;re One Step Closer to Checkout</p>
 
                             <Image
                                 src="https://res.cloudinary.com/dbnxbly1r/image/upload/v1720285742/timbu-shop/prod1_f1dxpk.svg"
@@ -73,11 +73,11 @@ const ProductCard: React.FC<productsProps> = ({ imgUrl, name, price }) => {
                             <div className='flex flex-col'>
                                 <p className='sm:text-[0.8rem] text-[0.8rem] font-[500]'>Music System Speaker</p>
                                 <p className='ml-8 sm:text-[0.8rem] text-[0.8rem] font-[400]'>QTY: 1</p>
-                                <p className='sm:text-[0.8rem] text-[0.8rem] font-[400]'>Total: ₦80,000</p>
+                                <p className='ml-2 sm:text-[0.8rem] text-[0.8rem] font-[400]'>Total: ₦80,000</p>
                             </div>
                         </div>
 
-                        <div className='flex flex-col bg-white'>
+                        <div className='flex flex-col modal-card2'>
                             <p className='text-[0.8rem]'>You have just 1 item in your cart</p>
                             <p className='text-center text-sm font-[400]'>₦80,000.00</p>
                             <Link href="/"

@@ -45,10 +45,39 @@
   left: 0;
 }
 
+.cartmodal{
+  position: relative;
+  max-width: 650px;
+  bottom: 8%;
+  margin: auto;
+  width: 100%;
+  padding: 2rem 0rem;
+  padding-right: 2rem;
+
+}
+
+.modal-card2{
+  margin-left: 3rem;
+}
+
+@media screen and (max-width:920px) {
+  .cartmodal {
+    max-width: 550px;
+    padding-left: 1.4rem;
+
+  }
+  .modal-card2{
+    margin-left: 1.8rem;
+  }
+}
 
 @media screen and (max-width:640px) {
-    .search-input::placeholder {
-      color: #8E5858;
-      font-size: 0.5rem;
-    }
+  .search-input::placeholder {
+    color: #8E5858;
+    font-size: 0.5rem;
+
+  }
+  .modal-card2{
+    margin-left: 2rem;
+  }
 }

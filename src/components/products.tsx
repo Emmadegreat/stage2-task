@@ -26,7 +26,7 @@ const Products = () => {
     return (
         <>
             <div>
-                <div className='sm:flex hidden bg-[#FFECD0] text-18px rounded flex-col items-center py-10 px-8'>
+                <div className='sm:flex hidden bg-[#FFECD0] text-18px rounded flex-col items-center py-10 px-10'>
                     <h2 className='font-[Poppins] text-[#4E2020] font-bold text-[40px] leading-[60px]'>Our Popular Products</h2>
                     <p className='text-[16px] leading-[24px] text-[#909090] text-center text-[Poppins]'>
                         Explore Our Collection of Top-Rated Gadgets Designed  <br/> to Enhance

@@ -12,7 +12,7 @@ const Cart = () => {
                 <hr className='border-[0.05rem] border-[#F5E5FF]' />
             </div>
 
-            <section className='sm:px-[4rem] px-6 mb-2 md:flex md:flex-row flex-col md:justify-between py-4'>
+            <section className='sm:px-[4rem] px-6 mb-2 md:flex md:flex-row flex-col md:justify-around py-4'>
                 <div className='flex items-center sm:mb-0 mb-[2rem]'>
                     <div className='basis-[48%]'>
                         <Image
@@ -55,17 +55,17 @@ const Cart = () => {
             <hr className='sm:mx-[3rem] mx-6 border-[0.05rem] border-[#F5E5FF]' />
             <Link href="/" className='sm:px-[4rem] px-8 block md:hidden text-start mt-2 mb-[4rem] basis-[30%]'>Continue Shopping</Link>
 
-            <section className="sm:px-[4rem] px-8 flex md:flex-row flex-col justify-between items-center md:py-4 py-[3rem] mb-[8rem]">
+            <section className="sm:px-[4rem] px-8 flex md:flex-row flex-col justify-around items-center md:py-4 py-[3rem] mb-[8rem]">
 
-                <textarea name="" id="" className='bg-[#D9D9D980] rounded p-2 md:h-1[30px] h-[120px] basis-[30%] w-full'>
+                <textarea name="" id="" className='bg-[#D9D9D980] rounded p-2 h-[100px] lg:ml-8 ml-0 basis-[30%] w-full'>
                     Add a comment...
                 </textarea>
 
-                <Link href="/" className='hidden md:block text-center md:my-[1rem] my-[2rem] basis-[30%]'>Continue Shopping</Link>
+                <Link href="/" className='hidden md:block text-center md:my-[1rem] my-[2rem] basis-[15%]'>Continue Shopping</Link>
 
                 <div className='flex items-center flex-col rounded md:mt-0 mt-[4rem] p-3 border-2 border-[#F5E5FF] w-full pb-[1.3rem] basis-[30%]'>
                     <p className='mb-4'>Sub Total ₦80, 000</p>
-                    <Link href="/checkout" className='bg-[#AF0101] rounded p-2 text-sm text-[#fff]'>Proceed to checkout</Link>
+                    <Link href="/checkout" className='bg-[#AF0101] hover:bg-[#ad5b5b] rounded p-2 text-sm text-[#fff]'>Proceed to checkout</Link>
                 </div>
             </section>
 

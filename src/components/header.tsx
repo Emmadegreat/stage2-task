@@ -9,7 +9,7 @@ import React from 'react'
 
 const Header:React.FC = () => {
     return (
-        <header className='fixed flex items-center justify-between sm:px-[3rem] px-6  bg-[#AF0101] text-white w-full h-[70px] z-[1000]'>
+        <header className='fixed flex items-center justify-between sm:px-8 px-6  bg-[#AF0101] text-white w-full h-[70px] z-[1000]'>
             <Link href="/">
                 <Image
                     alt='alt'
