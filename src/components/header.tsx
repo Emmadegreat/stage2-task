@@ -1,15 +1,25 @@
-import { AiFillHome } from 'react-icons/ai'
-import { AiOutlineArrowRight } from 'react-icons/ai'
+
+"use client"
+
+import React, { useState } from 'react'
+
 import { BsArrowRight } from "react-icons/bs";
 import Button from '@/components/button'
 import Image from 'next/image'
 import Link from 'next/link'
 import Menu from './menu'
-import React from 'react'
 import { TfiMenu } from "react-icons/tfi";
 import logo from "@/assest/images/logo.jpg"
 
 const Header: React.FC = () => {
+
+
+    const [show, setShow] = useState<boolean>(false);
+
+    const Showbtn = () => setShow(true);
+    const Closebtn = () => setShow(false);
+
+
     return (
         <>
 
@@ -43,6 +53,7 @@ const Header: React.FC = () => {
         </header>
         <div className='navbar sm:hidden w-full py-4 flex justify-between items-center fixed bg-[#fff] h-[70px px-6'>
                 <TfiMenu
+                    onClick={Showbtn}
                     className='text-[#707070] font-[600] text-[1.2rem]'
                 />
 
@@ -56,8 +67,10 @@ const Header: React.FC = () => {
                     <path d="M25 10C27.7614 10 30 7.76142 30 5C30 2.23858 27.7614 0 25 0C22.2386 0 20 2.23858 20 5C20 7.76142 22.2386 10 25 10Z" fill="#EBADAD"/>
                     <path d="M24.2226 3.8V3.385H25.1626V7H24.7026V3.8H24.2226Z" fill="black"/>
                 </svg>
-                <ul className='nav-menu'>
-                   <div className='toggler'>
+
+                <ul className={show ? "nav-menu active" : "nav-menu"}>
+                    <div className='toggler'>
+
                         <div className='basis-[95%]'>
                             <Link href="/" className=''>
                                 <Image
@@ -69,7 +82,7 @@ const Header: React.FC = () => {
                         </div>
                         <div className='basis-[5%] mr-3'>
                             <svg width="28" height="28" viewBox="0 0 24 24" fill="none"
-
+                                onClick={Closebtn}
                                 className='font-[600] '
                                 xmlns="http://www.w3.org/2000/svg">
                                 <path d="M18 6L6 18" stroke="#020202" strokeWidth="1.5" strokeLinecap="round" strokeLinejoin="round"/>
