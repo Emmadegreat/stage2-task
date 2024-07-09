@@ -14,7 +14,6 @@ import logo2 from '@/assest/images/logo2.png'
 
 const Header: React.FC = () => {
 
-
     const [show, setShow] = useState<boolean>(false);
 
     const Showbtn = () => setShow(true);
@@ -36,9 +35,9 @@ const Header: React.FC = () => {
             </Link>
             <div className='sm:flex hidden justify-between'>
 
-                <Menu title="Home" address="/" className="hover:text-[#ffecd0] links" />
-                <Menu title="Products" address="/" className="mx-4 hover:text-[#ffecd0] links" />
-                <Menu title="Contact" address="/" className="mr-4 hover:text-[#ffecd0] links" />
+                <Menu title="Home" address="/" onClick="" className="hover:text-[#ffecd0] links" />
+                <Menu title="Products" address="/" onClick="" className="mx-4 hover:text-[#ffecd0] links" />
+                <Menu title="Contact" address="/" onClick="" className="mr-4 hover:text-[#ffecd0] links" />
             </div>
 
             <div className='hidden sm:flex items-center justify-center'>
