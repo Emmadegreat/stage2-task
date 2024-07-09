@@ -81,7 +81,8 @@ const Products = () => {
                 <h2 className='hidden font-[Poppins] text-[#4E2020] font-bold text-center my-6 text-[25px] leading-[50px]'>Our Popular Products</h2>
                 <div className=' grid grid-cols-1 place-items-center sm:grid-cols-2
                     lg:grid-cols-3 xl:grid-cols-3 xl:gap-5 mb-[10rem] gap-y-10 gap-x-2'>
-                    {
+                    {findProducts.length > 0 ? (
+
                         findProducts.map((item) => (
                             <ProductCard
                                 key={item.id}
@@ -92,7 +93,9 @@ const Products = () => {
                             />
 
                         ))
-                    }
+                    ): (
+                        <p className="text-center">Woops 🤭 ! product not available</p>
+                    )}
 
                 </div>
             </div>
