@@ -3,6 +3,7 @@ import React from 'react'
 
 const Footer = () => {
 
+
     const date = new Date().getFullYear();
     return (
         <footer className='p-4 bg-[#151515] text-[#fff] px-6 sm:px-8 text-center w-full'>
@@ -44,7 +45,7 @@ const Footer = () => {
                     />
                     <button
                         type="submit"
-                        className='absolute bg-[#af0101] sm:px-6 px-3 bottom-[20px] sm:right-[-45px] right-[-20px] h-[44px] p-1 text-[#fff] w-[]
+                        className='absolute hover:bg-[#AD5B5B] bg-[#af0101] sm:px-6 px-3 bottom-[20px] sm:right-[-45px] right-[-20px] h-[44px] p-1 text-[#fff] w-[]
                          focus:outline-none focus:border-transparent focus:ring-0 submit-btn'
                     >
                         Send

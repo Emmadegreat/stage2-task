@@ -160,7 +160,7 @@ const Checkout = () => {
                             />
                             <button
                                 type="submit"
-                                className='absolute bg-[#af0101] md:px-6 px-3 bottom-[20px] md:right-[11px] right-[-20px] h-[44px] p-1 text-[#fff] w-[80px]
+                                className='absolute hover:bg-[#AD5B5B] bg-[#af0101] md:px-6 px-3 bottom-[20px] md:right-[11px] right-[-20px] h-[44px] p-1 text-[#fff] w-[80px]
                                 focus:outline-none focus:border-transparent focus:ring-0 submit-btn'
                             >
                                 Apply
