@@ -102,9 +102,9 @@ const Header: React.FC = () => {
                     </div>
                     <div className='flex flex-col mt-1'>
 
-                        <Menu title="Home" address="/" className="my-6" />
-                        <Menu title="Products" address="/" className="" />
-                        <Menu title="Contact" address="/" className="my-6" />
+                        <Menu title="Home" address="/" className="my-6 hover:text-[#ffecd0] links" onClick={Closebtn} />
+                        <Menu title="Products" address="/" className="hover:text-[#ffecd0] links" onClick={Closebtn} />
+                        <Menu title="Contact" address="/" className="my-6 hover:text-[#ffecd0] links" onClick={Closebtn} />
                     </div>
                 </ul>
 
