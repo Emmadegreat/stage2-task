@@ -16,7 +16,7 @@ const Checkout = () => {
                             type="text"
                             name='name'
 
-                            placeholder='FullName'
+                            placeholder='Full Name'
 
                             className='w-full h-[42px] placeholder-[#000] text-[1rem] px-3 py-1 mb-5 rounded border-[1px] border-[#B2A9A9] focus:outline-0 focus:border-[1px] focus:border-[#B2A9A9]'
                         />
