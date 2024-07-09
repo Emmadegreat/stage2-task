@@ -119,9 +119,9 @@ const Checkout = () => {
                             className='w-full h-[42px] text-[1rem] px-3 py-1 mb-5 rounded border-[1px] border-[#B2A9A9]
                                 focus:outline-0 focus:border-[1px] focus:border-[#B2A9A9] placeholder-[#000] mr-4'
                         />
-                        <textarea name="" id="" className='border-[1px] border-[#B2A9A9]
+                        <textarea name="" placeholder="Kindly drop your instruction" id="" className='border-[1px] border-[#B2A9A9]
                                 focus:outline-0 focus:border-[1px] focus:border-[#B2A9A9] placeholder-[#A38C8C] rounded p-2 md:h-1[30px] h-[120px] basis-[30%] w-full'>
-                            Kindly drop your instruction
+
                         </textarea>
                     </section>
 

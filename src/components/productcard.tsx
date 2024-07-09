@@ -94,9 +94,6 @@ const ProductCard: React.FC<productsProps> = ({ imgUrl, name, price }) => {
                         </div>
                     </div>
 
-
-
-
                 </div>
             )}
 
