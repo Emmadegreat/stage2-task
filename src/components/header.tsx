@@ -60,7 +60,7 @@ const Header: React.FC = () => {
 
 
         </header>
-        <div className='navbar sm:hidden w-full py-4 flex justify-between items-center fixed bg-[#fff] h-[70px px-6'>
+        <div className='navbar sm:hidden w-full py-4 flex justify-between items-center fixed z-50 bg-[#fff] h-[70px px-6'>
                 <TfiMenu
                     onClick={Showbtn}
                     className='text-[#707070] font-[600] text-[1.2rem]'
