@@ -75,8 +75,8 @@ const Header: React.FC = () => {
                         <div className='basis-[95%]'>
                             <Link href="/" className=''>
                                 <Image
-                                    src={logo}
-                                    className='cursor-pointer h-[20px w-[20px]'
+                                    src={logo2}
+                                    className='cursor-pointer h-[40px w-[40px]'
                                     alt="logo"
                                 />
                             </Link>

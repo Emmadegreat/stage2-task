@@ -1,5 +1,6 @@
 import React, { ChangeEvent, useState } from 'react'
 
+import { BsArrowRight } from 'react-icons/bs'
 import Button from './button'
 import ProductCard from './productcard'
 import { ProductList } from '@/productlist'
@@ -56,15 +57,13 @@ const Products = () => {
                         Seamless Shopping for the discerning <br/> customer. Fast finds & instant <br/> gratification. Shop Happy!
                     </p>
                     <Button
-                        className='flex bg-[#EBADAD] text-[#4E2020] w-[280px] text-center rounded font-[500] px-6 mt-5 items-center py-2 gap-2'
-                        text='Shop Now'
-                        icon={
-                            <svg className='text-[#4E2020]' width="25" height="24" viewBox="0 0 25 24" fill="none" xmlns="http://www.w3.org/2000/svg">
-                                <path d="M14.93 5.93005L21 12.0001L14.93 18.0701" stroke="#4E2020" strokeWidth="1.5" strokeMiterlimit="10" strokeLinecap="round" strokeLinejoin="round"/>
-                                <path d="M4 12H20.83" stroke="#4E2020" strokeWidth="1.5" strokeMiterlimit="10" strokeLinecap="round" strokeLinejoin="round"/>
-                            </svg>
-                        }
-                    />
+                    className='flex bg-[#EBADAD] hover:bg-[#AF0101] w-[280px] justify-center hover:text-[#fff]  text-center text-[#4E2020] rounded font-[500] px-6 mt-7 items-center py-2 gap-2'
+                    text='Shop Now'
+                    icon={
+
+                        <BsArrowRight className='font-[500] text-[1.3rem]'/>
+                    }
+                />
                 </div>
             </div >
 

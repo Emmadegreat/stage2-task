@@ -93,15 +93,14 @@
     position: fixed;
     align-items: flex-start;
     background-color: #fff;
-    width: 50%;
+    width: 70%;
     height: 100vh;
     top: 0;
-    margin-left: -1rem;
+    margin-left: -0.5rem;
+    padding-left: 2rem;
     left: -100%;
     padding-top: 1.5rem;
     padding-left: 1.5rem;
-
-
   z-index: 1000;
   transition: 0.7s all;
   -webkit-transition: 0.7s all;
