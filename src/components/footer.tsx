@@ -2,7 +2,11 @@ import Link from 'next/link'
 import React from 'react'
 
 const Footer = () => {
+    const GoToTop = () => {
+        if (window.innerHeight < 200) {
 
+        }
+    }
 
     const date = new Date().getFullYear();
     return (

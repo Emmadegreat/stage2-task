@@ -6,17 +6,22 @@ import Button from '@/components/button'
 import Image from 'next/image'
 import Link from 'next/link'
 
-const Cart:React.FC = () => {
+const Cart: React.FC = () => {
+    const initialPrice: number = 80000
     const [count, setCount] = useState<number>(1);
-    const [price, setprice] = useState<number>(80000);
+    const [price, setprice] = useState<number>(initialPrice);
 
     const IncreaseCount = () => {
-        setCount(count + 1);
-        setprice(price + price);
+        const newCount = count + 1
+        setCount(newCount);
+        setprice(newCount * initialPrice);
     }
     const DecreaseCount = () => {
-        setCount(count - 1);
-        setprice(price*((count - 1)));
+        const newCount = count - 1
+        if (newCount > 0) {
+            setCount(newCount);
+            setprice(newCount * initialPrice);
+        }
     }
 
     return (
