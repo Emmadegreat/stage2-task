@@ -86,7 +86,7 @@ const ProductCard: React.FC<productsProps> = ({ imgUrl, name, price }) => {
                             </Link>
                             <Link href="/cart"
                                 className='hover:bg-[#AF0101] hover:text-[#fff] w-[200px] p-2 sm:my-3 my-5 text-sm text-[#000] text-center rounded border-[1px] border-[#AF0101] sm:border-[#B2A9A9]'>
-                                View Vart
+                                View Cart
                             </Link>
                             <Link href="/checkout"
                                 className='hover:bg-[#ad5b5b] w-[200px] text-[#fff] text-center rounded bg-[#AF0101] p-2 text-sm'
