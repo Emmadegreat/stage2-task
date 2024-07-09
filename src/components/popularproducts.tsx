@@ -32,11 +32,11 @@ const Popularproducts = () => {
                 <p className="text-[#AD5B5B] font-[400] text-[18px] leading-[25px] mt-4 font-[inter]">
                     Seamless Shopping for the discerning <br/> customer. Fast finds & instant <br/> gratification. Shop Happy!
                 </p>
-                <button className='flex bg-[#EBADAD] text-center hover:bg-[#AF0101] hover:text-[#fff] text-[#4E2020] w-[280px] rounded font-[500] px-6 mt-5 items-center py-2 gap-2'>
+                <button className='mb-12 flex bg-[#EBADAD] text-center hover:bg-[#AF0101] hover:text-[#fff] text-[#4E2020] w-[280px] rounded font-[500] px-6 mt-5 items-center py-2 gap-2'>
                     Shop Now
                     <BsArrowRight className='font-[500] text-[1.3rem]' />
                 </button>
-            </div>
+            </div><br/>
         </div >
     )
 }

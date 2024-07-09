@@ -57,7 +57,7 @@ const Products = () => {
                         Seamless Shopping for the discerning <br/> customer. Fast finds & instant <br/> gratification. Shop Happy!
                     </p>
                     <Button
-                    className='flex bg-[#EBADAD] hover:bg-[#AF0101] w-[280px] justify-center hover:text-[#fff]  text-center text-[#4E2020] rounded font-[500] px-6 mt-7 items-center py-2 gap-2'
+                    className='mb-12 flex bg-[#EBADAD] hover:bg-[#AF0101] w-[280px] justify-center hover:text-[#fff]  text-center text-[#4E2020] rounded font-[500] px-6 mt-7 items-center py-2 gap-2'
                     text='Shop Now'
                     icon={
 
