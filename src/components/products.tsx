@@ -23,11 +23,18 @@ const Products = () => {
         setSearch(e.target.value);
     }
 
+    const ScrollUp = () => {
+        window.scrollTo({
+            top: 0,
+            behavior: 'smooth'
+       })
+    }
+
 
     return (
         <>
             <div>
-                <div className='bg-[#FFECD0] text-18px rounded flex-col items-center py-10 px-8'>
+                <div className='bg-[#FFECD0] text-18px rounded flex-col items-center sm:py-10 pt-10 pb-6 px-8'>
                     <h2 className='font-[Poppins] text-[#4E2020]  text-center font-[600] mb-4 text-[26px] leading-[40px]'>Our Popular Products</h2>
                     <p className='sm:block hidden text-sm sm:text-[16px] leading-[24px] text-[#909090] text-center text-[Poppins]'>
                         Explore Our Collection of Top-Rated Gadgets Designed to
@@ -97,6 +104,13 @@ const Products = () => {
                         <p className="text-center">Woops 🤭 ! product not available</p>
                     )}
 
+                </div>
+                <div className='mb-[5rem] m-auto flex justify-center items-center'>
+                    <button onClick={ScrollUp}
+                        className='font-[500] block sm:hidden w-[200px] p-2 mt-3 text-sm text-[#000] text-center rounded
+                        border-[1px] border-[#B2A9A9]'>
+                        Go Up
+                    </button>
                 </div>
             </div>
         </>
