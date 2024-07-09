@@ -74,7 +74,7 @@ const Checkout = () => {
                     <section className=''>
                         <p className='text-[#4E2020] mt-3 mb-7 font-[500] text-[1.1rem]'>Delivery Schedule</p>
                         <input
-                            type="date"
+                            type="text"
                             name='date'
 
                             placeholder='Date...'
