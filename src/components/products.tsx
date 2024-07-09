@@ -29,10 +29,13 @@ const Products = () => {
             <div>
                 <div className='bg-[#FFECD0] text-18px rounded flex-col items-center py-10 px-8'>
                     <h2 className='font-[Poppins] text-[#4E2020]  text-center font-[600] mb-4 text-[26px] leading-[40px]'>Our Popular Products</h2>
-                    <p className='text-sm sm:text-[16px] leading-[24px] text-[#909090] text-center text-[Poppins]'>
+                    <p className='sm:block hidden text-sm sm:text-[16px] leading-[24px] text-[#909090] text-center text-[Poppins]'>
                         Explore Our Collection of Top-Rated Gadgets Designed to
                     </p>
-                    <p className='text-sm sm:text-[16px] leading-[24px] text-[#909090] text-center text-[Poppins]'> Enhance Your Productivity and Entertainment</p>
+                    <p className='sm:block hidden text-sm sm:text-[16px] leading-[24px] text-[#909090] text-center text-[Poppins]'> Enhance Your Productivity and Entertainment</p>
+                    <p className='sm:hidden block text-sm sm:text-[16px] leading-[24px] text-[#909090] text-center text-[Poppins]'>
+                        Explore Our Collection of Top-Rated Gadgets Designed to Enhance Your Productivity and Entertainment
+                    </p>
 
                     <div className="relative top-4 flex justify-center">
                         <div className="relative">
