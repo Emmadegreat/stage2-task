@@ -1,9 +1,17 @@
+'use client';
+
+import React, { FC, useState } from 'react'
+
 import Button from '@/components/button'
 import Image from 'next/image'
 import Link from 'next/link'
-import React from 'react'
 
-const Cart = () => {
+const Cart:React.FC = () => {
+    const [count, setCount] = useState<number>(1);
+
+    const IncreaseCount = () => setCount(count + 1);
+    const DecreaseCount = () =>setCount(count - 1);
+
     return (
         <div className='flex flex-col pt-[4rem] bg-[#F4F4F499]'>
             <div className='h-[50px]'></div>
@@ -31,9 +39,9 @@ const Cart = () => {
 
                         <div className='flex md:hidden flex-col justify-center items-center text-center md:pl-[3rem]'>
                             <div className='flex items-center mx-2 py-3 px-4'>
-                                <button className='text-[#AF0101] text-[1.2rem] font-[600]'>-</button>
-                                <button className='mx-2 rounded text-[#000] py-1 px-2 bg-[#D9D9D9]'>01</button>
-                                <button className='text-[#AF0101] text-[1.2rem] font-[600]'>+</button>
+                                <button onClick={DecreaseCount} className='text-[#AF0101] text-[1.2rem] font-[600]'>-</button>
+                                <button className='mx-2 rounded text-[#000] py-1 px-2 bg-[#D9D9D9]'>0{count}</button>
+                                <button onClick={IncreaseCount} className='text-[#AF0101] text-[1.2rem] font-[600]'>+</button>
                             </div>
                             <p className='text-sm'>₦80,000</p>
                         </div>
@@ -43,9 +51,9 @@ const Cart = () => {
                 <div className='hidden md:flex justify-center items-center text-center md:pl-[3rem]'>
                     <p>₦80,000</p>
                     <div className='flex items-center mx-2 py-1 px-4'>
-                        <button className='text-[#AF0101] text-[1.2rem] font-[600]'>-</button>
-                        <button className='mx-2 rounded text-[#000] py-1 px-2 bg-[#D9D9D9]'>01</button>
-                        <button className='text-[#AF0101] text-[1.2rem] font-[600]'>+</button>
+                        <button onClick={DecreaseCount} className='text-[#AF0101] text-[1.2rem] font-[600]'>-</button>
+                        <button className='mx-2 rounded text-[#000] py-1 px-2 bg-[#D9D9D9]'>0{ count }</button>
+                        <button onClick={IncreaseCount} className='text-[#AF0101] text-[1.2rem] font-[600]'>+</button>
                     </div>
                     <p>₦80,000</p>
                 </div>
