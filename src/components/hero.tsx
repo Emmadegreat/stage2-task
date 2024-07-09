@@ -36,6 +36,21 @@ const   Hero = () => {
                 />
             </div>
 
+            <div className='md:hidden flex items-center text-center flex-col'>
+
+                    <p className="text-[#AD5B5B] font-[400] text-[18px] leading-[25px] mt-4 font-[inter]">
+                        Seamless Shopping for the discerning <br/> customer. Fast finds & instant <br/> gratification. Shop Happy!
+                    </p>
+                    <Button
+                    className='mb-12 flex bg-[#EBADAD] hover:bg-[#AF0101] w-[280px] justify-center hover:text-[#fff]  text-center text-[#4E2020] rounded font-[500] px-6 mt-7 items-center py-2 gap-2'
+                    text='Shop Now'
+                    icon={
+
+                        <BsArrowRight className='font-[500] text-[1.3rem]'/>
+                    }
+                />
+                </div>
+
         </div>
     )
 }

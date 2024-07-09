@@ -27,7 +27,7 @@ const Products = () => {
     return (
         <>
             <div>
-                <div className='sm:flex hidden bg-[#FFECD0] text-18px rounded flex-col items-center py-10 px-10'>
+                <div className='sm:flex bg-[#FFECD0] text-18px rounded flex-col items-center py-10 px-10'>
                     <h2 className='font-[Poppins] text-[#4E2020] font-bold text-[40px] leading-[60px]'>Our Popular Products</h2>
                     <p className='text-[16px] leading-[24px] text-[#909090] text-center text-[Poppins]'>
                         Explore Our Collection of Top-Rated Gadgets Designed  <br/> to Enhance
@@ -51,7 +51,7 @@ const Products = () => {
                     </div>
                 </div>
 
-                <div className='sm:hidden flex items-center text-center flex-col'>
+                {/*<div className='sm:hidden flex items-center text-center flex-col'>
 
                     <p className="text-[#AD5B5B] font-[400] text-[18px] leading-[25px] mt-4 font-[inter]">
                         Seamless Shopping for the discerning <br/> customer. Fast finds & instant <br/> gratification. Shop Happy!
@@ -64,7 +64,7 @@ const Products = () => {
                         <BsArrowRight className='font-[500] text-[1.3rem]'/>
                     }
                 />
-                </div>
+                </div>*/}
             </div >
 
             <div className="bg-[#F4F4F480] pt-8 md:px-12 px-7">
