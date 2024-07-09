@@ -32,7 +32,7 @@ const Products = () => {
                     <p className='text-[14px] sm:text-[16px] leading-[24px] text-[#909090] text-center text-[Poppins]'>
                         Explore Our Collection of Top-Rated Gadgets Designed to
                     </p>
-                    <p className='text-[16px] leading-[24px] text-[#909090] text-center text-[Poppins]'>Enhance Your Productivity and Entertainment</p>
+                    <p className='text-[14px] sm:text-[16px] leading-[24px] text-[#909090] text-center text-[Poppins]'>Enhance Your Productivity and Entertainment</p>
 
                     <div className="relative top-4 flex justify-center">
                         <div className="relative">
