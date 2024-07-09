@@ -8,9 +8,16 @@ import Link from 'next/link'
 
 const Cart:React.FC = () => {
     const [count, setCount] = useState<number>(1);
+    const [price, setprice] = useState<number>(80000);
 
-    const IncreaseCount = () => setCount(count + 1);
-    const DecreaseCount = () =>setCount(count - 1);
+    const IncreaseCount = () => {
+        setCount(count + 1);
+        setprice(price + price);
+    }
+    const DecreaseCount = () => {
+        setCount(count - 1);
+        setprice(price*((count - 1)));
+    }
 
     return (
         <div className='flex flex-col pt-[4rem] bg-[#F4F4F499]'>
@@ -43,19 +50,19 @@ const Cart:React.FC = () => {
                                 <button className='mx-2 rounded text-[#000] py-1 px-2 bg-[#D9D9D9]'>0{count}</button>
                                 <button onClick={IncreaseCount} className='text-[#AF0101] text-[1.2rem] font-[600]'>+</button>
                             </div>
-                            <p className='text-sm'>₦80,000</p>
+                            <p className='text-sm'>₦{price}</p>
                         </div>
                     </div>
                 </div>
 
                 <div className='hidden md:flex justify-center items-center text-center md:pl-[3rem]'>
-                    <p>₦80,000</p>
+                    <p>₦{price}</p>
                     <div className='flex items-center mx-2 py-1 px-4'>
                         <button onClick={DecreaseCount} className='text-[#AF0101] text-[1.2rem] font-[600]'>-</button>
                         <button className='mx-2 rounded text-[#000] py-1 px-2 bg-[#D9D9D9]'>0{ count }</button>
                         <button onClick={IncreaseCount} className='text-[#AF0101] text-[1.2rem] font-[600]'>+</button>
                     </div>
-                    <p>₦80,000</p>
+                    <p>₦{price}</p>
                 </div>
 
             </section>
