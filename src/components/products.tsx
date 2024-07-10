@@ -1,19 +1,30 @@
-import React, { ChangeEvent, useState } from 'react'
+'use client'
+
+import React, { ChangeEvent, useEffect, useState } from 'react'
 
 import { BsArrowRight } from 'react-icons/bs'
 import Button from './button'
+import Link from 'next/link'
 import ProductCard from './productcard'
 import { ProductList } from '@/productlist'
 
-interface productProps1{
-    id: number;
-    name: string;
-    imgUrl: string;
-    price: string;
-}
-const Products = () => {
+const Products:React.FC = () => {
 
-    const [search, setSearch] = useState("");
+    const [ismobile, setIsmobile] = useState<boolean>(false)
+    const [search, setSearch] = useState<string>("");
+
+
+    useEffect(() => {
+        const handleResize = () => {
+          setIsmobile(window.innerWidth <= 640);
+        }
+        handleResize();
+        window.addEventListener("resize", handleResize);
+
+        return()=>window.removeEventListener("resize", handleResize);
+
+    }, [])
+
 
     const findProducts = ProductList.filter(product => {
         return product.name.toLowerCase().includes(search.toLowerCase());
@@ -21,13 +32,6 @@ const Products = () => {
 
     const handleSearch = (e: ChangeEvent<HTMLInputElement>) => {
         setSearch(e.target.value);
-    }
-
-    const ScrollUp = () => {
-        window.scrollTo({
-            top: 0,
-            behavior: 'smooth'
-       })
     }
 
 
@@ -44,7 +48,7 @@ const Products = () => {
                         Explore Our Collection of Top-Rated Gadgets Designed to Enhance Your Productivity and Entertainment
                     </p>
 
-                    <div className="relative top-4 flex justify-center">
+                    <div className="relative top-4 flex justify-center mb-">
                         <div className="relative">
                             <svg
                                 className='absolute inset-y-0 left-3 top-[0.7rem] flex items-center text-[#BABABA]'
@@ -88,7 +92,26 @@ const Products = () => {
                 <h2 className='hidden font-[Poppins] text-[#4E2020] font-bold text-center my-6 text-[25px] leading-[50px]'>Our Popular Products</h2>
                 <div className=' grid grid-cols-1 place-items-center sm:grid-cols-2
                     lg:grid-cols-3 xl:grid-cols-3 xl:gap-5 mb-[10rem] gap-y-10 gap-x-2'>
-                    {findProducts.length > 0 ? (
+                    {ismobile && findProducts.length > 0 ? (
+
+                        <>{findProducts.slice(0, 6).map((item) => (
+                            <ProductCard
+                                key={item.id}
+                                imgUrl={item.imgUrl}
+                                name={item.name}
+                                price={item.price}
+
+                            />
+
+                        ))}
+
+                        <Link href="/moreproducts" className="className='font-[500] block sm:hidden w-[200px] p-2 mt-3 text-sm text-[#000] text-center rounded
+                            border-[1px] border-[#B2A9A9]">
+                            View More
+                        </Link>
+                        </>
+
+                    ) : findProducts.length > 0 ? (
 
                         findProducts.map((item) => (
                             <ProductCard
@@ -100,18 +123,13 @@ const Products = () => {
                             />
 
                         ))
-                    ): (
-                        <p className="text-center">Woops 🤭 ! product not available</p>
+
+                    ) : (
+                        <p className="m-auto text-center">Woops 🤭 ! product not available</p>
                     )}
 
                 </div>
-                <div className='mb-[5rem] m-auto flex justify-center items-center'>
-                    <button onClick={ScrollUp}
-                        className='font-[500] block sm:hidden w-[200px] p-2 mt-3 text-sm text-[#000] text-center rounded
-                        border-[1px] border-[#B2A9A9]'>
-                        Go Up
-                    </button>
-                </div>
+
             </div>
         </>
     )

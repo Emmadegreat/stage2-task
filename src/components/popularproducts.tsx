@@ -5,14 +5,14 @@ import React from 'react'
 const Popularproducts = () => {
     return (
         <div>
-            <div className='sm:flex hidden bg-[#FFECD0] text-18px rounded flex-col items-center py-10 px-8'>
+            <div className='sm:flex hidden bg-[#FFECD0] text-18px rounded flex-col items-center pt-10 pb-[1.5rem] px-8'>
                 <h2 className='font-[Poppins] text-[#4E2020] font-bold text-[40px] leading-[60px]'>Our Popular Products</h2>
                 <p className='text-[16px] leading-[24px] text-[#909090] text-center text-[Poppins]'>
                     Explore Our Collection of Top-Rated Gadgets Designed  <br/> to Enhance
                     Your Productivity and Entertainment
                 </p>
 
-                <div className="relative top-4">
+                <div className="relative top-4 bottom">
                     <svg
                         className='absolute inset-y-0 left-2 top-3 pl-1 flex items-center text-[#BABABA]'
                         width="20" height="20" viewBox="0 0 20 20" fill="none" xmlns="http://www.w3.org/2000/svg">
@@ -25,6 +25,7 @@ const Popularproducts = () => {
                         className='sm:w-[410px] w-[300px] h-[42px] bg-[#fff] text-[1rem] pl-9 pr-3 py-1 mb-5 border-none focus:outline-none focus:border-transparent focus:ring-0'
                     />
                 </div>
+                <br />
             </div>
 
             <div className='sm:hidden flex items-center text-center flex-col'>
