@@ -12,7 +12,7 @@ const Products:React.FC = () => {
 
     const [ismobile, setIsmobile] = useState<boolean>(false)
     const [search, setSearch] = useState<string>("");
-
+    const [seeMore, setSeeMore] = useState<boolean>(false);
 
     useEffect(() => {
         const handleResize = () => {
@@ -32,6 +32,14 @@ const Products:React.FC = () => {
 
     const handleSearch = (e: ChangeEvent<HTMLInputElement>) => {
         setSearch(e.target.value);
+    }
+
+    const toggleSeemore = () => setSeeMore(!seeMore);
+     const ScrollUp = () => {
+        window.scrollTo({
+            top: 0,
+            behavior: 'smooth'
+       })
     }
 
 
@@ -94,7 +102,8 @@ const Products:React.FC = () => {
                     lg:grid-cols-3 xl:grid-cols-3 xl:gap-5 mb-[10rem] gap-y-10 gap-x-2'>
                     {ismobile && findProducts.length > 0 ? (
 
-                        <>{findProducts.slice(0, 6).map((item) => (
+                        <>
+                            {findProducts.slice(0, 6).map((item) => (
                             <ProductCard
                                 key={item.id}
                                 imgUrl={item.imgUrl}
@@ -103,12 +112,25 @@ const Products:React.FC = () => {
 
                             />
 
-                        ))}
+                            ))}
 
-                        <Link href="/moreproducts" className="className='font-[500] block sm:hidden w-[200px] p-2 mt-3 text-sm text-[#000] text-center rounded
-                            border-[1px] border-[#B2A9A9]">
-                            View More
-                        </Link>
+                            <>{seeMore && findProducts.slice(6).map((item) => (
+                                <ProductCard
+                                    key={item.id}
+                                    imgUrl={item.imgUrl}
+                                    name={item.name}
+                                    price={item.price}
+                                />
+                            ))}
+
+                            </>
+
+                            <button
+                                onClick={toggleSeemore}
+                                className="font-[500] block sm:hidden w-[200px] p-2 mt-3 text-sm text-[#000] text-center rounded
+                                border-[1px] border-[#B2A9A9]">
+                                {seeMore ? "See Less" : "Show More"}
+                            </button>
                         </>
 
                     ) : findProducts.length > 0 ? (
@@ -128,6 +150,14 @@ const Products:React.FC = () => {
                         <p className="m-auto text-center">Woops 🤭 ! product not available</p>
                     )}
 
+                </div>
+
+                            <div className='mb-[5rem] m-auto flex justify-center items-center'>
+                    <button onClick={ScrollUp}
+                        className='font-[500] block sm:hidden w-[200px] p-2 text-sm text-[#000] text-center rounded
+                        border-[1px] border-[#B2A9A9]'>
+                        Go Up
+                    </button>
                 </div>
 
             </div>
