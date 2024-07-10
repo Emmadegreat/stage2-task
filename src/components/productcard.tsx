@@ -5,9 +5,6 @@ import { HiArrowNarrowRight } from "react-icons/hi";
 import Image from 'next/image'
 import Link from 'next/link'
 
-//import { ProductList } from '@/productlist'
-
-
 interface productsProps{
     imgUrl: string,
     name: string,
@@ -48,8 +45,6 @@ const ProductCard: React.FC<productsProps> = ({ imgUrl, name, price }) => {
                     </button>
                 </div>
             </div>
-
-
 
             {showModal && (
 
