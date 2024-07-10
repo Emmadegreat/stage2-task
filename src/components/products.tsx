@@ -35,13 +35,6 @@ const Products:React.FC = () => {
     }
 
     const toggleSeemore = () => setSeeMore(!seeMore);
-     const ScrollUp = () => {
-        window.scrollTo({
-            top: 0,
-            behavior: 'smooth'
-       })
-    }
-
 
     return (
         <>
@@ -152,13 +145,7 @@ const Products:React.FC = () => {
 
                 </div>
 
-                            <div className='mb-[5rem] m-auto flex justify-center items-center'>
-                    <button onClick={ScrollUp}
-                        className='font-[500] block sm:hidden w-[200px] p-2 text-sm text-[#000] text-center rounded
-                        border-[1px] border-[#B2A9A9]'>
-                        Go Up
-                    </button>
-                </div>
+
 
             </div>
         </>
