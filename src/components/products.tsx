@@ -109,7 +109,7 @@ const Products:React.FC = () => {
                                 onClick={toggleSeemore}
                                 className="font-[500] block sm:hidden w-[200px] p-2 mt-3 text-sm text-[#000] text-center rounded
                                 border-[1px] border-[#B2A9A9]">
-                                {seeMore ? "See Less" : "Show More"}
+                                {seeMore ? "See Less" : "View More"}
                             </button>
                         </>
 
