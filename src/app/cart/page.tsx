@@ -33,7 +33,7 @@ const Cart: React.FC = () => {
             </div>
 
             <section className='sm:px-[2rem] px-6 mb-2 md:flex md:flex-row flex-col md:justify-around py-4'>
-                <div className='flex items-between sm:mb-0 mb-[2rem]'>
+                <div className='flex items-center sm:mb-0 mb-[2rem]'>
                     <div className='basis-[48%]'>
                         <Image
                             src="https://res.cloudinary.com/dbnxbly1r/image/upload/v1720285742/timbu-shop/prod1_f1dxpk.svg"
@@ -60,7 +60,7 @@ const Cart: React.FC = () => {
                     </div>
                 </div>
 
-                <div className='hidden md:flex justify-between items-center text-center md:pl-[3rem]'>
+                <div className='hidden md:flex justify-center items-center text-center md:pl-[3rem]'>
                     <p>₦{price}</p>
                     <div className='flex items-center mx-2 py-1 px-4'>
                         <button onClick={DecreaseCount} className='text-[#AF0101] text-[1.2rem] font-[600]'>-</button>
@@ -75,7 +75,7 @@ const Cart: React.FC = () => {
             <hr className='sm:mx-[3rem] mx-6 border-[0.05rem] border-[#F5E5FF]' />
             <Link href="/" className='sm:px-[4rem] px-8 block md:hidden text-start mt-2 mb-[4rem] basis-[30%]'>Continue Shopping</Link>
 
-            <section className="sm:px-[4rem] px-8 flex md:flex-row flex-col justify-around items-center md:py-4 py-[3rem] mb-[8rem]">
+            <section className="sm:px-[5rem] px-8 flex md:flex-row flex-col justify-around items-center md:py-4 py-[3rem] mb-[8rem]">
 
                 <textarea name="" id="" className='bg-[#D9D9D980] rounded p-2 h-[100px] lg:ml-8 ml-0 basis-[30%] w-full'>
                     Add a comment...
