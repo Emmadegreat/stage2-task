@@ -60,7 +60,7 @@ const Cart: React.FC = () => {
                     </div>
                 </div>
 
-                <div className='hidden md:flex justify-center items-center text-center md:pl-[3rem]'>
+                <div className='hidden md:flex justify-between items-center text-center md:pl-[3rem]'>
                     <p>₦{price}</p>
                     <div className='flex items-center mx-2 py-1 px-4'>
                         <button onClick={DecreaseCount} className='text-[#AF0101] text-[1.2rem] font-[600]'>-</button>
