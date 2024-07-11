@@ -33,7 +33,7 @@ const Cart: React.FC = () => {
             </div>
 
             <section className='sm:px-[2rem] px-6 mb-2 md:flex md:flex-row flex-col md:justify-around py-4'>
-                <div className='flex items-center sm:mb-0 mb-[2rem]'>
+                <div className='flex items-between sm:mb-0 mb-[2rem]'>
                     <div className='basis-[48%]'>
                         <Image
                             src="https://res.cloudinary.com/dbnxbly1r/image/upload/v1720285742/timbu-shop/prod1_f1dxpk.svg"
