@@ -13,6 +13,8 @@ const Products:React.FC = () => {
     const [ismobile, setIsmobile] = useState<boolean>(false)
     const [search, setSearch] = useState<string>("");
     const [seeMore, setSeeMore] = useState<boolean>(false);
+    const [isloading, setIsloading] = useState<boolean>(false)
+
 
     useEffect(() => {
         const handleResize = () => {
@@ -24,6 +26,7 @@ const Products:React.FC = () => {
         return()=>window.removeEventListener("resize", handleResize);
 
     }, [])
+
 
 
     const findProducts = ProductList.filter(product => {

@@ -67,7 +67,7 @@ const Cart: React.FC = () => {
                         <button className='mx-2 rounded text-[#000] py-1 px-2 bg-[#D9D9D9]'>0{ count }</button>
                         <button onClick={IncreaseCount} className='text-[#AF0101] text-[1.2rem] font-[600]'>+</button>
                     </div>
-                    <p>₦{price}</p>
+
                 </div>
 
             </section>
