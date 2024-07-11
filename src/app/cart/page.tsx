@@ -40,7 +40,7 @@ const Cart: React.FC = () => {
                             alt=''
                             width={100}
                             height={100}
-                            className='h-auto w-[250px] md:max-w-[250px] md:max-h-[250px]'
+                            className='w-[100%] md:max-w-[250px] md:max-h-[250px]'
                         />
                     </div>
                     <div className='flex flex-col items-start basis-[48%]'>
