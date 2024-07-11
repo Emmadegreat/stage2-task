@@ -32,7 +32,7 @@ const Cart: React.FC = () => {
                 <hr className='border-[0.05rem] border-[#F5E5FF]' />
             </div>
 
-            <section className='sm:px-[4rem] px-6 mb-2 md:flex md:flex-row flex-col md:justify-around py-4'>
+            <section className='sm:px-[2rem] px-6 mb-2 md:flex md:flex-row flex-col md:justify-around py-4'>
                 <div className='flex items-center sm:mb-0 mb-[2rem]'>
                     <div className='basis-[48%]'>
                         <Image
@@ -40,7 +40,7 @@ const Cart: React.FC = () => {
                             alt=''
                             width={100}
                             height={100}
-                            className='h-auto w-[250px] md:max-w-[270px] md:max-h-[270px]'
+                            className='h-auto w-[250px] md:max-w-[250px] md:max-h-[250px]'
                         />
                     </div>
                     <div className='flex flex-col items-start basis-[48%]'>
