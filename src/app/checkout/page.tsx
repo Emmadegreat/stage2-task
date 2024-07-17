@@ -74,7 +74,7 @@ const Checkout = () => {
                     <section className=''>
                         <p className='text-[#4E2020] mt-3 mb-7 font-[500] text-[1.1rem]'>Delivery Schedule</p>
                         <input
-                            type="text"
+                            type="date"
                             name='date'
 
                             placeholder='Date...'
@@ -92,8 +92,8 @@ const Checkout = () => {
 
                         <div className='flex justify-between items-center'>
                             <input
-                                type='text'
-                                name='state'
+                                type='time'
+                                name='time'
                                 placeholder='Time'
                                 className='w-full h-[42px] text-[1rem] px-3 py-1 mb-5 rounded border-[1px] border-[#B2A9A9]
                                     focus:outline-0 focus:border-[1px] focus:border-[#B2A9A9] placeholder-[#000] mr-4'

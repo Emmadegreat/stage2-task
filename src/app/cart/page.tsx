@@ -77,8 +77,8 @@ const Cart: React.FC = () => {
 
             <section className="sm:px-[5rem] px-8 flex md:flex-row flex-col justify-around items-center md:py-4 py-[3rem] mb-[8rem]">
 
-                <textarea name="" id="" className='bg-[#D9D9D980] rounded p-2 h-[100px] lg:ml-8 ml-0 basis-[30%] w-full'>
-                    Add a comment...
+                <textarea name="message" placeholder=" Add a comment..." className='bg-[#D9D9D980] rounded p-2 h-[100px] lg:ml-8 ml-0 basis-[30%] w-full'>
+
                 </textarea>
 
                 <Link href="/" className='hidden md:block text-center md:my-[1rem] my-[2rem] basis-[15%]'>Continue Shopping</Link>
