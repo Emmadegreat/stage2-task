@@ -1,9 +1,11 @@
 import React,{ChangeEvent, FC, useState} from 'react'
+import { UseDispatch, useDispatch } from 'react-redux';
 
 import Button from './button'
 import { HiArrowNarrowRight } from "react-icons/hi";
 import Image from 'next/image'
 import Link from 'next/link'
+import { addToCart } from '@/redux/slice';
 
 interface productsProps{
     imgUrl: string,
@@ -12,9 +14,15 @@ interface productsProps{
 }
 
 const ProductCard: React.FC<productsProps> = ({ imgUrl, name, price }) => {
+
     const [showModal, setShowModal] = useState<boolean>(false);
 
-    const ToggleModal = (): void => setShowModal(!showModal)
+    const ToggleModal = (): void => setShowModal(!showModal);
+    const dispatch = useDispatch()
+
+    const handleAddToCart = (product:any) => {
+        dispatch(addToCart(product));
+    }
 
     return (
         <div className='px-2 py-4'>
@@ -33,7 +41,7 @@ const ProductCard: React.FC<productsProps> = ({ imgUrl, name, price }) => {
                     <p>₦{price}</p>
 
                     <button
-                        onClick={ToggleModal}
+                         onClick={handleAddToCart}
                         className='group hover:text-[#fff] bg-[#EBADAD] rounded px-6 mb-4 mt-1 items-center py-2 flex gap-4 hover:bg-[#AF0101]'>
                         <span className='group-hover:text-[#fff]'>
                             <svg

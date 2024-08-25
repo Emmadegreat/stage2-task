@@ -2,12 +2,14 @@
 "use client"
 
 import React, { useState } from 'react'
+import { UseSelector, useDispatch, useSelector } from 'react-redux';
 
 import { BsArrowRight } from "react-icons/bs";
 import Button from '@/components/button'
 import Image from 'next/image'
 import Link from 'next/link'
 import Menu from './menu'
+import {RootState} from '@/redux/store';
 import { TfiMenu } from "react-icons/tfi";
 import logo from "@/assest/images/logo.jpg"
 import logo2 from '@/assest/images/logo2.png'
@@ -19,6 +21,9 @@ const Header: React.FC = () => {
     const Showbtn = () => setShow(true);
     const Closebtn = () => setShow(false);
 
+    const cart = useSelector((state: RootState) =>state.cart.products)
+    const totalItems = useSelector((state: RootState) => state.cart.products.reduce((acc, product) => acc + product.quantity, 0));
+    console.log(totalItems);
 
     return (
         <>
@@ -50,7 +55,7 @@ const Header: React.FC = () => {
                             <path d="M31.2784 5.6V4.77H33.1584V12H32.2384V5.6H31.2784Z" fill="black"/>
                         </svg>
                             <span className='absolute bottom-[12px] right-[22px] px-[0.22rem] py-[0rem] text-[0.8rem] rounded-[100%] text-[#fff] bg-[#ff3333]'>
-                            0
+                            {totalItems}
                             </span>
                     </div>
                 </Link>
@@ -85,7 +90,7 @@ const Header: React.FC = () => {
                             <path d="M25 10C27.7614 10 30 7.76142 30 5C30 2.23858 27.7614 0 25 0C22.2386 0 20 2.23858 20 5C20 7.76142 22.2386 10 25 10Z" fill="#EBADAD"/>
                             <path d="M24.2226 3.8V3.385H25.1626V7H24.7026V3.8H24.2226Z" fill="black"/>
                         </svg>
-                        <span className='absolute bottom-[28px] right-[22px] px-[0.22rem] py-[0rem] text-[0.8rem] rounded-[100%] text-[#fff] bg-[#ff3333]'>0</span>
+                        <span className='absolute bottom-[28px] right-[22px] px-[0.22rem] py-[0rem] text-[0.8rem] rounded-[100%] text-[#fff] bg-[#ff3333]'>{ totalItems}</span>
                     </div>
                 </Link>
 

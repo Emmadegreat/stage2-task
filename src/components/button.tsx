@@ -1,11 +1,12 @@
-import React,{ReactNode} from 'react'
+import React, {FC} from 'react'
 
-interface ButtonProp{
-    className: string;
-    text: string;
-    icon?: ReactNode;
+interface buttonProps{
+    className: string,
+    text: string,
+    icon: string
 }
-const Button: React.FC<ButtonProp> = ({className, text, icon}) => {
+
+const Button:FC<buttonProps> = ({className, text, icon}) => {
     return (
         <div>
             <button className={className}>
